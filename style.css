@@ -1,25 +1,10 @@
-.app {
-  border: 1px solid;
-  border-radius: 25px;
-  padding: 15px;
-  margin: 20px auto;
-  max-width: 300;
+body {
   font-family: "Assistant", sans-serif;
-  background-image: url("media/daysky.jpg");
-  background-size: cover;
-  filter: brightness(140%);
 }
 
-.search-form {
-  max-width: 650px;
-  background-color: lightgrey;
-  border-radius: 15px;
-  padding: 15px;
-}
-
-.btn {
-  background-color: green;
-  color: White;
+ul {
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 li {
@@ -27,33 +12,47 @@ li {
   text-align: left;
 }
 
-span#temp {
-  font-size: 45px;
-  font-display: bold;
-}
-
-span#units {
-  font-size: 15px;
-  font-display: bold;
-  position: relative;
-  top: -34px;
-}
-
-.weekly {
-  display: block;
-  text-align: center;
-  margin: 20px;
-  padding-left: 100px;
-  max-width: fit-content;
-}
-
-.col-2 {
-  border: 1px solid;
-  border-radius: 60%;
-  padding: 20px;
-}
-
 footer {
   font-size: 10px;
   margin: 20px;
+}
+
+.app {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 300;
+
+  background-image: url("media/daysky.jpg");
+  background-size: cover;
+  filter: brightness(140%);
+}
+
+.today {
+}
+
+.temp {
+}
+
+.weather-details {
+}
+
+.search-form {
+  max-width: 650px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.col-2 {
+  display: block;
+  text-align: center;
+  margin: 5px;
+  padding-left: 100px;
+  max-width: 300px;
+  border: 1px solid;
+  border-radius: 60%;
+  padding: 20px;
 }
