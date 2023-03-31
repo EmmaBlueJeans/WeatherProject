@@ -33,7 +33,7 @@
               <input
                 type="submit"
                 value="Search"
-                class="form-control btn btn-primary shadow-sm w-100"
+                class="btn btn-primary shadow-sm w-100"
               />
             </div>
             <div class="col-3">
@@ -41,13 +41,13 @@
                 class="btn btn-success w-100"
                 id="current-location-button"
               >
-                Current Location
+                Current
               </button>
             </div>
           </div>
         </form>
 
-        <h1>Seattle</h1>
+        <h1 id="city">Seattle</h1>
 
         <div class="row today">
           <div class="col-4 day">
@@ -62,8 +62,9 @@
               <img
                 src="http://openweathermap.org/img/w/02d.png"
                 alt="partlyCloudy"
+                id="icon"
               />
-              <strong>44°</strong>
+              <strong id="temperature">44°</strong>
               <a id="celsius-link" href="#"> ℃ </a>
               |
               <a id="fahrenheit-link" href="#"> ℉ </a>
@@ -72,7 +73,6 @@
 
           <div class="col-4 weather-details">
             <ul>
-              <li>Precipitation:<span id="precipitation"></span>%</li>
               <li>Humidity: <span id="humidity">76</span>%</li>
               <li>
                 Wind:

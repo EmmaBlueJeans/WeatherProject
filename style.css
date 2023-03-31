@@ -50,7 +50,7 @@ footer {
 }
 
 .search-form {
-  max-width: 650px;
+  max-width: 600px;
   background-color: lightgrey;
   border-radius: 15px;
   padding: 15px;
@@ -73,5 +73,5 @@ footer {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.6;
 }
