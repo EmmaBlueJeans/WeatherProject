@@ -90,6 +90,7 @@ function displayWeatherCondition(response) {
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.icon);
 
+  console.log(dateElement);
   getForecast(response.data.coordinates);
 }
 
