@@ -79,7 +79,6 @@ function displayWeatherCondition(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  console.log(response.data);
 
   fahrenheitTemp = response.data.temperature.current;
 
