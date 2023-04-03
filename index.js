@@ -1,6 +1,6 @@
 function formatDate(timestamp) {
   let now = new Date(timestamp);
-  //let time = document.querySelector("ul li:first-child");
+
   let hours = now.getHours();
   let minutes = now.getMinutes();
   if (hours < 10) {
@@ -20,7 +20,6 @@ function formatDate(timestamp) {
   ];
   let day = days[now.getDay()];
   return `${day} ${hours}:${minutes}`;
-  // time.innerHTML = `${day},  ${hours}:${minutes}`;
 }
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -88,12 +87,6 @@ function displayWeatherCondition(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
   dateElement.innerHTML = formatDate(response.data.time * 1000);
-  //dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  //iconElement.setAttribute(
-  //  "src",
-  //  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  //);
-  //iconElement.setAttribute("alt", response.data.weather[0].description);
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.icon);
 
@@ -125,8 +118,6 @@ function getCurrentLocation(event) {
 
 function convertToCelsius(event) {
   event.preventDefault();
-  //var temperatureElement = document.querySelector("#temperature");
-  //temperatureElement.innerHTML = 66;
   let temperatureElement = document.querySelector("#temperature");
   let celsiusTemp = (fahrenheitTemp - 32) / 1.8;
   temperatureElement.innerHTML = Math.round(celsiusTemp);
@@ -136,8 +127,6 @@ function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-  //var temperatureElement = document.querySelector("#temperature");
-  // temperatureElement.innerHTML = 19;
 }
 
 let fahrenheitTemp = null;
