@@ -27,7 +27,12 @@
           Weather Finder:
           <div class="row search">
             <div class="col-6">
-              <input type="text" id="display-city" placeholder="Enter a City" />
+              <input
+                type="search"
+                placeholder="Enter a City"
+                class="form-control"
+                id="display-city"
+              />
             </div>
             <div class="col-3">
               <input
@@ -67,7 +72,7 @@
               <strong id="temperature">44°</strong>
               <a id="celsius-link" href="#"> ℃ </a>
               |
-              <a id="fahrenheit-link" href="#"> ℉ </a>
+              <a id="fahrenheit-link" href="#" class="active"> ℉ </a>
             </div>
           </div>
 
@@ -76,7 +81,7 @@
               <li>Humidity: <span id="humidity">76</span>%</li>
               <li>
                 Wind:
-                <span id="wind">12mph</span>
+                <span id="wind">12</span>mph
               </li>
             </ul>
           </div>
